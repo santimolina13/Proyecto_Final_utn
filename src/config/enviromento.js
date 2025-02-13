@@ -9,7 +9,7 @@ const ENVIROMENT={
     SECRET_KEY_JWT:process.env.JWT_SECRET,
     EMAIL_PASSWORD:process.env.EMAIL_PASSWORD,
     EMAIL_USERNAME:process.env.EMAIL_USERNAME,
-    URL_FRONTEND:process.env.URL_FRONTEND
-
+    URL_FRONTEND:process.env.URL_FRONTEND,
+    URL_BACKEND:process.env.URL_BACKEND
 }
 export default ENVIROMENT

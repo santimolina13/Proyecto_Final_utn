@@ -32,7 +32,7 @@ export const registerControler = async (req, res) => {
         html:`
         <h1>Debes validar tu mail</h1>
         <p>click para validar</p>
-        <a href=http://localhost:${ENVIROMENT.PORT}/api/auth/verify-email?verification_token=${verificationToken}>
+        <a href=${ENVIROMENT.URL_BACKEND}/api/auth/verify-email?verification_token=${verificationToken}>
         verificar
         </a>`
     })
@@ -92,7 +92,7 @@ export const verifyEmailControler = async (req, res) => {
             })
         }
         await userRepository.verifyUser(user_to_verify._id)
-        return res.redirect(`${ENVIROMENT.FRONTEND_URL}/login?verified=true`)
+        return res.redirect(`${ENVIROMENT.URL_FRONTEND}/login?verified=true`)
          /* res.json({
             ok: true,
             status:201,
