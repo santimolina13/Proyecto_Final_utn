@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
+import ENVIROMENT from "./enviromento.js"
 
 
-mongoose.connect("mongodb://localhost:27017/PlaticApp")
+mongoose.connect(ENVIROMENT.URL_MONGO)
     .then(() => {
         console.log("Connected to MongoDB")
     })      
@@ -10,3 +11,7 @@ mongoose.connect("mongodb://localhost:27017/PlaticApp")
     })
 
 export default mongoose
+
+
+
+

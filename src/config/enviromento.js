@@ -10,6 +10,7 @@ const ENVIROMENT={
     EMAIL_PASSWORD:process.env.EMAIL_PASSWORD,
     EMAIL_USERNAME:process.env.EMAIL_USERNAME,
     URL_FRONTEND:process.env.URL_FRONTEND,
-    URL_BACKEND:process.env.URL_BACKEND
+    URL_BACKEND:process.env.URL_BACKEND,
+    URL_MONGO:process.env.URL_MONGO
 }
 export default ENVIROMENT
